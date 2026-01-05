@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT bert
+START_TIME Tue Jul 13 16:30:42 EDT 2021
+END_TIME Tue Jul 13 19:27:43 EDT 2021
+RUNTIME_HOURS 2.950
+USER ah221
+HOST topaz.nmr.mgh.harvard.edu
+PROCESSOR x86_64
+OS Linux
+UNAME Linux topaz.nmr.mgh.harvard.edu 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+VERSION 7.2.0-beta (freesurfer-linux-centos7_x86_64-7.2.0-beta-20210713-aa8f76b)
+CMDPATH /autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/bin/recon-all
+CMDARGS -all -s bert -i /space/freesurfer/subjects/testsets/bert/raw/001.mgz -i /space/freesurfer/subjects/testsets/bert/raw/002.mgz -i /space/freesurfer/subjects/testsets/bert/raw/003.mgz -threads 8 -parallel

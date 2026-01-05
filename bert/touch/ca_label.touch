@@ -1,0 +1,1 @@
+mri_cc -aseg aseg.auto_noCCseg.mgz -o aseg.auto.mgz -lta /autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/mri/transforms/cc_up.lta bert

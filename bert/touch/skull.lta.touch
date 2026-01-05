@@ -1,0 +1,1 @@
+mri_em_register -skull nu.mgz /autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/average/RB_all_withskull_2020_01_02.gca transforms/talairach_with_skull.lta

@@ -1,0 +1,15 @@
+Logfile for pctsurfcon
+cd /autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/scripts
+Tue Jul 13 19:18:12 EDT 2021
+/autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/bin/pctsurfcon
+setenv SUBJECTS_DIR /autofs/vast/freesurfer/test/recons/bert/7.2.0
+pctsurfcon 7.2.0-beta
+cd /autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/scripts
+Linux topaz.nmr.mgh.harvard.edu 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+/autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/bin/pctsurfcon
+FREESURFER_HOME /autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta
+pctsurfcon 7.2.0-beta
+Linux topaz.nmr.mgh.harvard.edu 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta
+Cleaning up
+Cleaning up

@@ -1,0 +1,7 @@
+# AZS
+# compute_vox2vox talsrcimg talsrcimg_to_711-2C_as_mni_average_305_t4 /autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/average/711-2C_as_mni_average_305
+# freesurfer compute_vox2vox.c
+  0.890034 -0.034125 -0.006501   19.0169
+  0.029023  0.884050 -0.133077   22.4706
+  0.027348  0.137436  0.969405  -12.7330
+  0.000000  0.000000  0.000000    1.0000

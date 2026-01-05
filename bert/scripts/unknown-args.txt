@@ -1,0 +1,12 @@
+-all
+-s
+bert
+-i
+/space/freesurfer/subjects/testsets/bert/raw/001.mgz
+-i
+/space/freesurfer/subjects/testsets/bert/raw/002.mgz
+-i
+/space/freesurfer/subjects/testsets/bert/raw/003.mgz
+-threads
+8
+-parallel

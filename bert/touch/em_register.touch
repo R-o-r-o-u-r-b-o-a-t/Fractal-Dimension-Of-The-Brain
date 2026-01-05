@@ -1,0 +1,1 @@
+mri_em_register -uns 3 -mask brainmask.mgz nu.mgz /autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/average/RB_all_2020-01-02.gca transforms/talairach.lta

@@ -1,0 +1,81 @@
+status file for recon-all
+Tue Jul 13 16:30:44 EDT 2021
+#@# MotionCor Tue Jul 13 16:30:58 EDT 2021
+#@# Talairach Tue Jul 13 16:32:12 EDT 2021
+#@# Talairach Failure Detection Tue Jul 13 16:35:45 EDT 2021
+#@# Nu Intensity Correction Tue Jul 13 16:35:45 EDT 2021
+#@# Intensity Normalization Tue Jul 13 16:39:08 EDT 2021
+#@# Skull Stripping Tue Jul 13 16:40:36 EDT 2021
+#@# EM Registration Tue Jul 13 16:43:45 EDT 2021
+#@# CA Normalize Tue Jul 13 16:46:19 EDT 2021
+#@# CA Reg Tue Jul 13 16:47:25 EDT 2021
+#@# SubCort Seg Tue Jul 13 17:39:48 EDT 2021
+#@# CC Seg Tue Jul 13 18:25:00 EDT 2021
+#@# Merge ASeg Tue Jul 13 18:25:45 EDT 2021
+#@# Intensity Normalization2 Tue Jul 13 18:25:45 EDT 2021
+#@# Mask BFS Tue Jul 13 18:27:49 EDT 2021
+#@# WM Segmentation Tue Jul 13 18:27:50 EDT 2021
+#@# Fill Tue Jul 13 18:30:21 EDT 2021
+#@# Tessellate lh Tue Jul 13 18:31:23 EDT 2021
+#@# Tessellate rh Tue Jul 13 18:31:26 EDT 2021
+#@# Smooth1 lh Tue Jul 13 18:31:30 EDT 2021
+#@# Smooth1 rh Tue Jul 13 18:31:30 EDT 2021
+#@# Inflation1 lh Tue Jul 13 18:31:34 EDT 2021
+#@# Inflation1 rh Tue Jul 13 18:31:34 EDT 2021
+#@# QSphere lh Tue Jul 13 18:31:52 EDT 2021
+#@# QSphere rh Tue Jul 13 18:31:52 EDT 2021
+#@# Fix Topology lh Tue Jul 13 18:34:21 EDT 2021
+#@# Fix Topology rh Tue Jul 13 18:34:21 EDT 2021
+#@# Smooth2 lh Tue Jul 13 18:45:59 EDT 2021
+#@# Smooth2 rh Tue Jul 13 18:46:00 EDT 2021
+#@# Inflation2 lh Tue Jul 13 18:46:04 EDT 2021
+#@# Inflation2 rh Tue Jul 13 18:46:04 EDT 2021
+#@# Curv .H and .K lh Tue Jul 13 18:46:26 EDT 2021
+#@# Curv .H and .K rh Tue Jul 13 18:46:27 EDT 2021
+#@# Sphere lh Tue Jul 13 18:47:16 EDT 2021
+#@# Sphere rh Tue Jul 13 18:47:16 EDT 2021
+#@# Surf Reg lh Tue Jul 13 18:53:22 EDT 2021
+#@# Surf Reg rh Tue Jul 13 18:53:22 EDT 2021
+#@# Jacobian white lh Tue Jul 13 19:02:54 EDT 2021
+#@# Jacobian white rh Tue Jul 13 19:02:54 EDT 2021
+#@# AvgCurv lh Tue Jul 13 19:02:55 EDT 2021
+#@# AvgCurv rh Tue Jul 13 19:02:55 EDT 2021
+#@# Cortical Parc lh Tue Jul 13 19:02:57 EDT 2021
+#@# Cortical Parc rh Tue Jul 13 19:02:57 EDT 2021
+#@# white curv lh Tue Jul 13 19:12:39 EDT 2021
+#@# white area lh Tue Jul 13 19:12:41 EDT 2021
+#@# pial curv lh Tue Jul 13 19:12:41 EDT 2021
+#@# pial area lh Tue Jul 13 19:12:43 EDT 2021
+#@# thickness lh Tue Jul 13 19:12:44 EDT 2021
+#@# area and vertex vol lh Tue Jul 13 19:13:14 EDT 2021
+#@# white curv rh Tue Jul 13 19:13:16 EDT 2021
+#@# white area rh Tue Jul 13 19:13:18 EDT 2021
+#@# pial curv rh Tue Jul 13 19:13:19 EDT 2021
+#@# pial area rh Tue Jul 13 19:13:21 EDT 2021
+#@# thickness rh Tue Jul 13 19:13:21 EDT 2021
+#@# area and vertex vol rh Tue Jul 13 19:13:52 EDT 2021
+#@# Curvature Stats lh Tue Jul 13 19:13:54 EDT 2021
+#@# Curvature Stats rh Tue Jul 13 19:13:56 EDT 2021
+#@# Cortical ribbon mask Tue Jul 13 19:13:59 EDT 2021
+#@# Cortical Parc 2 lh Tue Jul 13 19:17:44 EDT 2021
+#@# Cortical Parc 2 rh Tue Jul 13 19:17:44 EDT 2021
+#@# Cortical Parc 3 lh Tue Jul 13 19:17:59 EDT 2021
+#@# Cortical Parc 3 rh Tue Jul 13 19:17:59 EDT 2021
+#@# WM/GM Contrast lh Tue Jul 13 19:18:12 EDT 2021
+#@# WM/GM Contrast rh Tue Jul 13 19:18:12 EDT 2021
+#@# Relabel Hypointensities Tue Jul 13 19:18:16 EDT 2021
+#@# APas-to-ASeg Tue Jul 13 19:18:31 EDT 2021
+#@# AParc-to-ASeg aparc Tue Jul 13 19:18:40 EDT 2021
+#@# AParc-to-ASeg aparc.a2009s Tue Jul 13 19:19:24 EDT 2021
+#@# AParc-to-ASeg aparc.DKTatlas Tue Jul 13 19:20:12 EDT 2021
+#@# WMParc Tue Jul 13 19:20:57 EDT 2021
+#@# Parcellation Stats lh Tue Jul 13 19:23:37 EDT 2021
+#@# Parcellation Stats rh Tue Jul 13 19:23:37 EDT 2021
+#@# Parcellation Stats 2 lh Tue Jul 13 19:24:02 EDT 2021
+#@# Parcellation Stats 2 rh Tue Jul 13 19:24:02 EDT 2021
+#@# Parcellation Stats 3 lh Tue Jul 13 19:24:16 EDT 2021
+#@# Parcellation Stats 3 rh Tue Jul 13 19:24:16 EDT 2021
+#@# ASeg Stats Tue Jul 13 19:24:29 EDT 2021
+#@# BA_exvivo Labels lh Tue Jul 13 19:25:09 EDT 2021
+#@# BA_exvivo Labels rh Tue Jul 13 19:26:24 EDT 2021
+recon-all -s bert finished without error at Tue Jul 13 19:27:43 EDT 2021

@@ -1,0 +1,24 @@
+/autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/mri
+/autofs/vast/freesurfer/centos7_x86_64/7.2.0-beta/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --ants-n4 --n 1 --proto-iters 1000 --distance 50
+nIters 1
+mri_nu_correct.mni 7.2.0-beta
+Linux topaz.nmr.mgh.harvard.edu 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Tue Jul 13 16:32:13 EDT 2021
+tmpdir is ./tmp.mri_nu_correct.mni.23030
+cd /autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.23030/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_convert ./tmp.mri_nu_correct.mni.23030/nu0.mgz orig_nu.mgz --like orig.mgz --conform
+mri_convert ./tmp.mri_nu_correct.mni.23030/nu0.mgz orig_nu.mgz --like orig.mgz --conform 
+reading from ./tmp.mri_nu_correct.mni.23030/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to orig_nu.mgz...
+ 
+ 
+Tue Jul 13 16:35:15 EDT 2021
+mri_nu_correct.mni done

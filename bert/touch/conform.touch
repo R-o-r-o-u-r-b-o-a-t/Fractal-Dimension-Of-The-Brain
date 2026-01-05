@@ -1,0 +1,1 @@
+mri_convert /autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/mri/rawavg.mgz /autofs/vast/freesurfer/test/recons/bert/7.2.0/bert/mri/orig.mgz --conform

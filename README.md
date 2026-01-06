@@ -30,6 +30,7 @@ The full license text is in ATTRIBUTIONS.md
 - Works directly with Freesurfer output.
 - Supports every atlas, but ensure the label files are complementary and use the LUT for volumetric labels of atlas parcellations.
 - cohort ready - Incorporates Pandas dataframes, allowing for direct analysis and batch processing.
+- In the files, there is bert, a Freesurfer sample output which can be used  to experiment with the code.
 
 ## Decisions
  - for the box counting algorithms, I have used box sizes of the factors of 240. This is due to the high number of factors and therefore box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate.

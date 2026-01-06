@@ -26,20 +26,20 @@ Can be found in your Freesurfer home directory, or the LUT.tsv file in the repo,
 The full license text is in ATTRIBUTIONS.md 
 
 ## Features
-- Multimodal complexity- although in progress, there are many approaches to quantifying the brain/region complexity.
+- Multimodal complexity- Includes many approaches to quantifying the brain/region complexity.
 - Works directly with Freesurfer output.
 - Supports every atlas, but ensure the label files are complementary and use the LUT for volumetric labels of atlas parcellations.
-- cohort ready - Incorporates Pandas dataframes, allowing for direct analysis and batch processing.
-- In the files, there is bert, a Freesurfer sample output which can be used  to experiment with the code.
+- Cohort ready - Incorporates Pandas dataframes, allowing direct analysis and batch processing.
+- In the files, there is bert, a recon-all sample output which can be used  to experiment with the code.
 
 ## Decisions
- - for the box counting algorithms, I have used box sizes of the factors of 240. This is due to the high number of factors and therefore box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate.
-- The cutoff for an acceptable r^2 value is 0.995. This may seem arbitrary or extreme, however log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
+ - For the box counting algorithms, I have used box sizes of the factors of 240. This is due to the high number of factors and therefore box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate.
+- The cutoff for an acceptable r^2 value is 0.995. This may seem arbitrary, however log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
 
 ## Limitations
 - As mentioned, the surface-based morphometry section requires further review
 - Additionally, some ROI have shown both bi and multi fractal properties. As I am yet to implement this, in the case of multiple FD the current code selects the FD with the higher linearity, which may limit deeper analysis at the moment.
-- Although the voxel-based code has been vectorised, the use of for loops in mesh calculations is inefficient, and requires improvement.
+- Although the voxel-based code has been vectorised, the use of for loops in mesh calculations is less efficient, so may take some more time to run.
 
 
 ## Notes

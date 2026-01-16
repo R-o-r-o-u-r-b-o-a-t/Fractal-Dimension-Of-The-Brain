@@ -30,7 +30,7 @@ The full license text is in ATTRIBUTIONS.md
 - Works directly with Freesurfer output.
 - Supports every atlas, but ensure the label files are complementary and use the LUT for volumetric labels of atlas parcellations.
 - Cohort ready - Incorporates Pandas dataframes, allowing direct analysis and batch processing.
-- Validated method - both the voxel and mesh-based estimates were carried out on a AI generated menger sponge ( FD ~ 2.72). The results can be found in the menger_validation folder.
+- Validated method - both the voxel and mesh-based estimates were carried out on a AI generated menger sponge ( FD ≈ 2.73). The results can be found in the menger_validation folder.
 - In the files, there is bert, a recon-all sample output which can be used  to experiment with the code.
 
 ## Decisions

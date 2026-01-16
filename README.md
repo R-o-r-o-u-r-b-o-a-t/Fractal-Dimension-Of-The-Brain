@@ -15,7 +15,7 @@ Can be found in your Freesurfer home directory, or the LUT.tsv file in the repo,
 
 2. Surface based morphometry. This analyses outputs such as lh.pial and lh.white.
     - Currently, the program uses the vertices, and their .annot files released in the labels output of Freesurfer. Similar to voxel-based analysis, it incorporates a box counting technique.
-    - This method is currently under review for validity and accuracy, as I aim to try the box counting algorithm using mesh triangle faces rather than vertices first, and compare the results. 
+    - This method is currently under review for accuracy, as I aim to try the box counting algorithm using mesh triangle faces rather than vertices first, and compare the results. 
 
 3. Higuchi Fractal Dimension, which I have sourced.
     a. Source: "https://github.com/inuritdino/HiguchiFractalDimension"
@@ -30,14 +30,16 @@ The full license text is in ATTRIBUTIONS.md
 - Works directly with Freesurfer output.
 - Supports every atlas, but ensure the label files are complementary and use the LUT for volumetric labels of atlas parcellations.
 - Cohort ready - Incorporates Pandas dataframes, allowing direct analysis and batch processing.
+- Validated method - both the voxel and mesh-based estimates were carried out on a AI generated menger sponge ( FD ~ 2.72). The results can be found in the menger_validation folder.
 - In the files, there is bert, a recon-all sample output which can be used  to experiment with the code.
 
 ## Decisions
- - For the box counting algorithms, I have used box sizes of the factors of 240. This is due to the high number of factors and therefore box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate.
+ - In practice, calculating the FD of a known fractal requires using appropriate box sizes (such as powers of 3 for a menger sponge) in order to overcome the limitations of a finite space. For the box counting algorithms, however, I have used box sizes of the factors of 240. 
+    - This is because the brain is not a perfect fractal, so the box sizes used can be slightly subjective. I did choose factors of 240 due to the high number of box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate. Additionally, sticking to one scale throughout makes the results more comparable in analysis, regardless of specific box sizes. 
 - The cutoff for an acceptable r^2 value is 0.995. This may seem arbitrary, however log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
 
 ## Limitations
-- As mentioned, the surface-based morphometry section requires further review
+- As mentioned, the surface-based morphometry section requires further review. The menger sponge validation showed the correct FD for the voxel-based shape, while the mesh-based sponge gave an FD estimate 2.3% higher than expected.
 - Additionally, some ROI have shown both bi and multi fractal properties. As I am yet to implement this, in the case of multiple FD the current code selects the FD with the higher linearity, which may limit deeper analysis at the moment.
 - Although the voxel-based code has been vectorised, the use of for loops in mesh calculations is less efficient, so may take some more time to run.
 

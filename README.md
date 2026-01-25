@@ -39,7 +39,7 @@ The full license text is in ATTRIBUTIONS.md
 - The cutoff for an acceptable r^2 value is 0.995. This may seem arbitrary, however log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
 
 ## Limitations
-- As mentioned, the surface-based morphometry section requires further review. The menger sponge validation showed the correct FD for the voxel-based shape, while the mesh-based sponge gave an FD estimate 2.3% higher than expected.
+- As mentioned, the surface-based morphometry section requires further review. The menger sponge validation showed the correct FD for the voxel-based shape, while the mesh-based sponge showed 2.3% discrepancy.
 - Additionally, some ROI have shown both bi and multi fractal properties. As I am yet to implement this, in the case of multiple FD the current code selects the FD with the higher linearity, which may limit deeper analysis at the moment.
 - Although the voxel-based code has been vectorised, the use of for loops in mesh calculations is less efficient, so may take some more time to run.
 

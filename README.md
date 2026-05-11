@@ -34,7 +34,7 @@ The full license text is in ATTRIBUTIONS.md
 - In the files, there is bert, a recon-all sample output which can be used  to experiment with the code.
 
 ## Decisions
- - In practice, calculating the FD of a known fractal requires using appropriate box sizes (such as powers of 3 for a menger sponge) in order to overcome the limitations of a finite space. For the box counting algorithms, however, I have used box sizes of the factors of 240. 
+ - In theory, calculating the FD of a known fractal requires using appropriate box sizes (such as powers of 3 for a menger sponge) in order to overcome the limitations of a finite space. For the box counting algorithms, however, I have used box sizes of the factors of 240. 
     - This is because the brain is not a perfect fractal, so the box sizes used can be slightly subjective. I did choose factors of 240 due to the high number of box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate. Additionally, sticking to one scale throughout makes the results more comparable in analysis, regardless of specific box sizes. 
 - The cutoff for an acceptable r^2 value is 0.995. This may seem arbitrary, however log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
 
@@ -45,6 +45,7 @@ The full license text is in ATTRIBUTIONS.md
 
 
 ## Notes
-- I have used the DK atlas for surface files, and a reference exists in DK_atlas_ref.txt. This program is, however, also compatible with the Destrieux and DKT atlases.
--  If the HFD code experiences issues, please make sure you are using a working C compiler.
+- I have used the DK atlas for surface files, and a reference exists in DK_atlas_ref.txt. This program is, however, also compatible with all Freesurfer atlases present in the LUT.
+- If the HFD code experiences issues, please  ensure you are using a working C compiler.
+- The Menger Sponge was rendered in powers of 3, therefore the volume was 81x81x81 voxels, using box-sizes of factors of 81. This should not affect the validity of the pipeline results as, in brain analysis, volumes of 240x240x240 and 480x480x480 were consistent, maintaining comparability across the study.
 

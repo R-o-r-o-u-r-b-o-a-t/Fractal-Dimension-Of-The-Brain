@@ -36,7 +36,7 @@ The full license text is in ATTRIBUTIONS.md
 ## Decisions
  - In theory, calculating the FD of a known fractal requires using appropriate box sizes (such as powers of 3 for a menger sponge) in order to overcome the limitations of a finite space. For the box counting algorithms, however, I have used box sizes of the factors of 240. 
     - This is because the brain is not a perfect fractal, so the box sizes used can be slightly subjective. I did choose factors of 240 due to the high number of box sizes in this range. A larger number of boxes improves assessment of the log-log graph and calculates a more stable FD estimate. Additionally, sticking to one scale throughout makes the results more comparable in analysis, regardless of specific box sizes. 
-- The cutoff for an acceptable r^2 value is 0.995. This may seem arbitrary, however log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
+- The cutoff for an acceptable r^2 value is 0.995. This is because log-log graphs are extremely sensitive to small outliers, and by experimentation I have found the chosen r^2 to be the highest for which most regions still maintained more than five boxes in my results, which was the minimum required for the analysis.
 
 ## Limitations
 - As mentioned, the surface-based morphometry section requires further review. The menger sponge validation showed the correct FD for the voxel-based shape, while the mesh-based sponge showed 2.3% discrepancy.
